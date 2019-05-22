@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MinePhone</title>
+<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>
+a.one:link, a.one:visited  { 
+         display:inline-block;
+         color:white;
+         background-color:tomato;
+         text-align:center;
+         padding: 20px 20px;
+         text-decoration: none;
+         font-size:1.5vw;
+         font-family:'Andika';
+}
+
+a.one :hover, a.one:active { 
+         color:black;
+         background-color:white;
+         text-decoration: none;
+}
+
+a.two:link, a.two:visited  { 
+         display:inline-block;
+         color:white;
+         background-color:tomato;
+         padding: 5px 5px;
+         text-align:center;
+         text-decoration: none;
+         font-size:2vw;
+         font-family:'Amatic SC';
+}
+
+#pageframe {
+         list-style-type:none;
+}
+
+
+ul {
+         width:100%;
+         max-width:100%;
+}
+
+ul li {
+         float: left;   
+}
+
+input {
+         width: 100%;
+}
+
+input[type=search] {
+         border: 4px solid red;
+         border-radius: 4px;
+         background-color: #F33;
+         color: white;
+}
+
+body {
+         background: url("chipwaste.jpg");
+         background-attachment: scroll;
+         background-size: auto;
+         background-repeat: repeat;
+}
+#homepage{
+         background-image: url("beautiful dusk.jpg");
+         overflow:auto;
+         width: 100%;
+         height: auto;
+         font-size:4vw;
+         font-family:'Amatic SC';
+         color:white;
+}
+#intro{
+         overflow:auto;
+         background-image: url("screenwaste.jpg");
+         background-size: 100%;
+         width: 100%;
+         height: auto;
+         font-size:2.5vw;
+         font-family:'Amatic SC';
+         color:white;
+}     
+#reason, #cost
+{
+   overflow:auto;
+         background-size: 100%;
+         background-color:black;
+         width: 100%;
+         min-width: 500px;
+         height: 1000px;
+         background-repeat: no-repeat;
+         font-size:2.5vw;
+         font-family:'Amatic SC';
+         color:white;
+}
+
+ #change, #idea, #photo, #video, #author
+{
+         overflow:auto;
+         background-size: 100%;
+         background-color:black;
+         width: 100%;
+         min-width: 500px;
+         height: auto;
+         background-repeat: no-repeat;
+         font-size:2.5vw;
+         font-family:'Amatic SC';
+         color:white;
+}
+#searchform {
+         background-color: tomato;
+         width:auto;
+         font-family:'Andika';
+         color: white;
+}
+
+#reasonsToUpgrade{
+         height:500px;
+         width:1000px;
+         align:center; 
+
+}
+meter {
+      width: 70%;
+      height: 5%;
+}
+
+meter::-webkit-meter-bar {
+    background: black;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2) inset;
+    border-radius: 3px;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: red; 
+    border-radius: 3px;
+}
+
+meter::-webkit-meter-suboptimum-value {
+    background: red; 
+    border-radius: 3px;
+}
+
+meter::-webkit-meter-even-less-good-value {
+    background: red; 
+    border-radius: 3px;
+}
+
+#photo1, #photo2, #photo3, #photo4, #photo5, #photo6, #video1{
+      text-align:center;  
+}
+
+#photo_1, #photo_2, #photo_3, #photo_4, #photo_5, #photo_6, #video_1{
+      width:100%;
+      max-Width:100%;
+}
+.hidden::-webkit-scrollbar { width: 0 !important }
+
+</style>
+
+</head>
+<body>
+<div id="head">
+<ul id="pageframe">
+  <li><a class="one" href="#homepage"><b>Home</b></a></li>
+  <li><a class="one" href="#intro"><b>Introduction</b></a></li>
+  <li><a class="one" href="#project"><b>Project</b></a></li>
+  <li><a class="one" href="#idea"><b>Idea</b></a></li>
+  <li><a class="one" href="#photo"><b>Gallery</b></a></li>
+  <li><a class="one" href="#video"><b>Videos</b></a></li>
+  <li><a class="one" href="#author"><b>Author</b></a></li>
+  <li><div id="searchform"><form action=""><strong>Search this site: </strong><input type="search" name="search" maxlength="30" placeholder="search this site"><button onclick="submit">search</button></form></div></li> 
+</ul>
+</div>
+
+<div id="homepage" class="hidden">
+<h1 align="center" style="color:white;"> <span style="color:red;font-size:10vw;">MINE</span><span style="color:white;font-size:10vw;">PHONE</span></h1>
+<h1 align="center" style="color:black;"> The <span style="color:white;">Phone</span> To Be <span style="color:red;">Owned</span> </h1>
+</div>
+
+<div id="intro" class="hidden">
+
+<h1 align="center" ><span style="color:white; background-color:gray;"> Every year </span> </h1>
+<h1 align="center" ><span style="color:white; background-color:gray;"> We leave tons of E-waste unused </span> </h1>
+<h1 align="center" ><span style="color:white; background-color:gray;"> But claim to be environmental-friendly </span></h1>
+<h1 align="center" ><span style="color:white; background-color:gray;"> For recycling 1% of them </span></h1>
+<h1 align="center" ><span style="color:white; background-color:gray;"> Instead of recycling </span></h1>
+<h1 align="center" ><span style="color:white; background-color:gray;"> Why not reducing? </span></h1>
+</div>
+
+<div id="project" class="hidden">
+<div id="reason" class="hidden">
+
+<h1 align="center" style="background-color:red;"> What prompts people to upgrade their smart phone every year? </h1>
+
+<label for="E1"><span style="color:red; background-color:black;">Smartphone/cellphone breaks down</span></label></br>
+<meter id="E1" name="A" min="0" max="100" high="60" optimum="80" value="0"></meter><span class="meter-value" style="color:black; background-color:white">60%</span></br>
+<label for="E2"><span style="color:red; background-color:black;">Battery life decreases</span></label></br>
+<meter id="E2" name="B" min="0" max="100" high="36" value="0"></meter><span class="meter-value" style="color:black; background-color:white">36%</span></br>
+<label for="E3"><span style="color:red; background-color:black;">A new model that I like comes on the market</span></label></br>
+<meter id="E3" name="C" min="0" max="100" high="33" value="0"></meter><span class="meter-value" style="color:black; background-color:white">33%</span></br>
+<label for="E4"><span style="color:red; background-color:black;">An inexpensive offer for a more modern device</span></label></br>
+<meter id="E4" name="D" min="0" max="100" high="31" value="0"></meter><span class="meter-value" style="color:black; background-color:white">31%</span></br>
+<label for="E5"><span style="color:red; background-color:black;">Lost/stolen</span></label></br>
+<meter id="E5" name="E" min="0" max="100" high="31" value="0"></meter><span class="meter-value" style="color:black; background-color:white">31%</span></br>
+<label for="E6"><span style="color:red; background-color:black;">Need more memory</span></label></br>
+<meter id="E6" name="F" min="0" max="100" high="26" value="0"></meter><span class="meter-value" style="color:black; background-color:white">26%</span></br>
+<label for="E7"><span style="color:red; background-color:black;">Don't know</span></label></br>
+<meter id="E7" name="G" min="0" max="100" high="4" value="0"></meter><span class="meter-value" style="color:black; background-color:white">4%</span></br>
+<label for="E8"><span style="color:red; background-color:black;">Smartphones are out of the question for me</span></label></br>
+<meter id="E8" name="H" min="0" max="100" high="4" value="0"></meter><span class="meter-value" style="color:black; background-color:white">4%</span></br>
+<label for="E9"><span style="color:red; background-color:black;">Other</span></label></br>
+<meter id="E9" name="I" min="0" max="100" high="3" value="0"></meter><span class="meter-value" style="color:black; background-color:white">3%</span></br>
+<div id="src" align="center"><a class="two" target="_blank" href="https://www.statista.com/statistics/716163/reasons-for-buying-a-new-smartphone-in-the-us/">Source</a></div>
+<script>
+ function frame(progressbar) {
+    if (document.getElementById(progressbar).value >= document.getElementById(progressbar).high)
+   {
+     clearInterval(id);
+   } 
+    else
+   {
+     document.getElementById(progressbar).value++;
+   }
+  }
+</script>
+<script>
+document.getElementById("reason").onmouseover = move0;
+function move0() {
+
+var id = setInterval(function(){frame("E1");}, 10);
+var id = setInterval(function(){frame("E2");}, 10);
+var id = setInterval(function(){frame("E3");}, 10);
+var id = setInterval(function(){frame("E4");}, 10);
+var id = setInterval(function(){frame("E5");}, 10);
+var id = setInterval(function(){frame("E6");}, 10);
+var id = setInterval(function(){frame("E7");}, 10);
+var id = setInterval(function(){frame("E8");}, 10);
+var id = setInterval(function(){frame("E9");}, 10);
+  
+}
+</script>
+
+<h1 align="center"> The Top Reasons Are </br>
+<span style="color:red;font-size:10vw;">Smartphone Breakdown</span></br>
+<span style="color:red; font-size:10vw;">Battery Wear</span></Br>
+<span style="color:red; font-size:10vw;">Attractive New Devices</span></Br>
+And
+<span style="color:red;font-size:10vw;">Inexpensive Offer </span>
+</h1>
+
+</div>
+
+<div id="cost" class="hidden" >
+<h1 align="center" style="background-color:red;"> What is the cost of updating your phone in 2019? </h1>
+
+<label for="F1"><span style="color:red; background-color:black;">IPhone XS MAX</span></label></br>
+<meter id="F1" name="J" min="0" max="109.9" high="109.9" optimum="69.9" value="0"></meter><span class="meter-value" style="color:black; background-color:white">From $1099</span></br>
+<label for="F2"><span style="color:red; background-color:black;">IPhone XS</span></label></br>
+<meter id="F2" name="K" min="0" max="109.9" high="99.9" optimum="69.9" value="0"></meter><span class="meter-value" style="color:black; background-color:white">From $999</span></br>
+<label for="F3"><span style="color:red; background-color:black;">Samsung S10+</span></label></br>
+<meter id="F3" name="L" min="0" max="109.9" high="99.9" optimum="69.9" value="0"></meter><span class="meter-value" style="color:black; background-color:white">From $999</span></br>
+<label for="F4"><span style="color:red; background-color:black;">Hwawei P30 Pro</span></label></br>
+<meter id="F4" name="M" min="0" max="109.9" high="89.9" optimum="69.9" value="0"></meter><span class="meter-value" style="color:black; background-color:white">From $899</span></br>
+<label for="F5"><span style="color:red; background-color:black;">Google Pixel 3</span></label></br>
+<meter id="F5" name="N" min="0" max="109.9" high="79.9" optimum="69.9" value="0"></meter><span class="meter-value" style="color:black; background-color:white">From $799</span></br>
+<label for="F6"><span style="color:red; background-color:black;">IPhone XR</span></label></br>
+<meter id="F6" name="O" min="0" max="109.9" high="74.9" optimum="69.9" value="0"></meter><span class="meter-value" style="color:black; background-color:white">From $749</span></br>
+
+<script>
+document.getElementById("cost").onmouseover = move1;
+function move1(){
+var id = setInterval(function(){frame("F1");}, 10);
+var id = setInterval(function(){frame("F2");}, 10);
+var id = setInterval(function(){frame("F3");}, 10);
+var id = setInterval(function(){frame("F4");}, 10);
+var id = setInterval(function(){frame("F5");}, 10);
+var id = setInterval(function(){frame("F6");}, 10);
+}
+</script>
+
+<h1 align="center"> Does A New Phone Worth The Price </h1>
+<h1 align="center"> And Priceless <span style="color:red;font-size:10vw;">Environment</span> </h1>
+<h1 align="center"> If What You Want Are Just Fully-functioning <span style="color:red;font-size:10vw;">Components</span> </h1>
+<h1 align="center"> And Some <span style="color:red;font-size:10vw;">Innovative Features</span> </h1> 
+</div>
+
+
+<div id="change" class="hidden" >
+<h1 align="center" style="background-color:red;"> What can be done to make it better? </h1>
+<h1 align="center"> Why Do We Have To Change <span style="color:red;font-size:10vw;">Every</span> Part Of Our Devices </h1>
+<h1 align="center"> If Most Of The Parts Are Nearly <span style="color:red;font-size:10vw;">Brand-new</span></h1>
+<h1 align="center"> How About Only Upgrading <span style="color:red;font-size:10vw;">Components</span></h1>
+<h1 align="center"> Like This </h1>
+</div>
+<div id="idea" class="hidden">
+<div id="photo1">
+<img id="photo_1" src="disintegration.png" alt="showcase" >
+</div>
+<div id="photo2">
+<img id="photo_2" src="disintegration_vertical.png" alt="showcase" >
+</div>
+<h1 align = "center"> Let's Take Control Over Our <span style="color:red;font-size:10vw;">Own</span> Devices </h1>
+<h1 align = "center"> Take Action To Save Our <span style="color:red;font-size:10vw;">Own</span> Planet </h1>
+<h1 align = "center"> Without Comprimising Our <span style="color:red;font-size:10vw;">Own</span> Lives </h1>
+<h1 align = "center"> This Is <span style="color:blue;font-size:10vw;">MinePhone</span></h1>
+<h1 align = "center"> Of <span style="color:blue;font-size:10vw;">Ourselves</span></h1>
+</div>
+<div id="photo" class="hidden">
+<h1 align = "center" style="background-color:red;"> Gallery </h1>
+
+<div id="photo3">
+<img id="photo_3" src="F1 Rendering.png" alt="showcase" >
+</div>
+<div id="photo4">
+<img id="photo_4" src="Tunnel Rendering.png" alt="showcase" >
+</div>
+<div id="photo5">
+<img id="photo_5" src="Double screen.png" alt="showcase" >
+</div>
+<div id="photo6">
+<img id="photo_6" src="keyboard.png" alt="showcase" >
+</div>
+</div>
+
+<div id="video" class="hidden">
+<div id="photo" class="hidden">
+<h1 align = "center" style="background-color:red;"> Video </h1>
+<div id="video1">
+<video preload="auto" poster="disintegration.png" id="video_1" width="1080" height="720" autoplay loop controls>
+<source src="demonstration.mp4" type="video/mp4" />
+<source src="demonstration.webm" type="video/webm" />
+Your browser does not support this video tag.
+</video>
+</div>
+</div>
+<div id="author" style="height:500px;">
+<h1 align = "center" style="background-color:red;"> Author </h1>
+<h1 align = "center"> Ricky(Liqi) Zhao </h1>
+<p align="center"> A UCLA student who loves to innovate </p>
+<script>
+document.getElementById("author").onmouseover = display;
+var n=0
+function display()
+{
+if(n==0)
+{
+var x = document.createElement("INPUT");
+  x.setAttribute("type", "button");
+  x.setAttribute("value", "Know More About Me");
+   x.setAttribute("onclick", "redirect()");
+  author.appendChild(x);
+  n++;
+}
+}
+function redirect()
+{
+ window.open("https://www.linkedin.com/in/liqi-ricky-zhao/");
+}
+</script>
+</body>
