@@ -1,6 +1,5 @@
 'use strict';
 
-const e = React.createElement;
 class Feedback extends React.Component {
     constructor(props) {
         super(props);
