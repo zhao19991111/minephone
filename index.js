@@ -142,7 +142,7 @@ class App extends React.Component {
 
 
 const domContainer = document.querySelector('#comment');
-ReactDOM.render(e(App), domContainer);
+ReactDOM.render(<App/>, domContainer);
 
 
     
