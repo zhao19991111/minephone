@@ -1,8 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './sstyle.css';
+'use strict';
 
-
+const myElement = React.createElement;
 class Feedback extends React.Component {
     constructor(props) {
         super(props);
@@ -142,7 +140,9 @@ class App extends React.Component {
     };
 }
 
-ReactDOM.render( <App /> , document.getElementById('comment'));
+
+const domContainer = document.querySelector('#comment');
+ReactDOM.render(e(App), domContainer);
 
 
     
