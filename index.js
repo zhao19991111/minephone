@@ -1,5 +1,5 @@
 'use strict';
-import 'sstyle.css’;
+import './sstyle.css’;
 
 class Feedback extends React.Component {
     constructor(props) {
@@ -142,7 +142,7 @@ class App extends React.Component {
 
 
 const domContainer = document.querySelector('#comment');
-ReactDOM.render(<App/>, domContainer);
+ReactDOM.render(<App />, domContainer);
 
 
     
