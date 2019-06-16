@@ -1,5 +1,5 @@
 'use strict';
-import ‘./sstyle.css’;
+import 'sstyle.css’;
 
 class Feedback extends React.Component {
     constructor(props) {
