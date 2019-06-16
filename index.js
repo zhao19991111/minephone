@@ -141,8 +141,8 @@ class App extends React.Component {
 }
 
 
-//const domContainer = document.querySelector('#comment');
-ReactDOM.render(<App/>, document.getElementById('comment'));
+const domContainer = document.querySelector('#comment');
+ReactDOM.render(<App/>, domContainer);
 
 
     
