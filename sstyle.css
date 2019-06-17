@@ -5,6 +5,7 @@
     border-color: #0077FF;
     background-color: white;
     text-align: left;
+    float: left;
 }
 
 #commentArea {
