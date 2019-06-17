@@ -19,3 +19,8 @@
     background-color: #f1600c;
     color: white;
 }
+
+#title {
+    align: center;
+    background-color: red;
+}
