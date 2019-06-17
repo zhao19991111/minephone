@@ -10,11 +10,14 @@
 #commentArea {
     background-color: red;
     width: 80%;
-    min-height: 80px;
-    max-height: 500px;
+    min-height: 100px;
     border-style: solid solid none solid;
     border-width: 1px 1px 0px 5px;
     border-color: #0077FF;
+}
+
+#commentList{
+    max-height: 500px;
 }
 
 #like {
