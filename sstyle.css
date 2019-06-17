@@ -28,3 +28,15 @@
     text-align: center;
     background-color: red;
 }
+
+#submitBtn, #clearBtn {
+    width: 10%;
+    float: left;
+    color: red;
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+
