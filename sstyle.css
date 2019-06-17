@@ -6,6 +6,8 @@
     background-color: white;
     text-align: left;
     float: left;
+    width: 80%;
+    min-height: 100px;
 }
 
 #commentArea {
