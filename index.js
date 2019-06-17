@@ -24,7 +24,7 @@ class Feedback extends React.Component {
     render() {
         var remainingChar = 150;
         var text = this.state.text;
-        return <div>
+        return (<div>
             <form>
                 <textarea
                     id="feedback"
@@ -39,7 +39,7 @@ class Feedback extends React.Component {
                     <p>remaining characters:{remainingChar - text.length}</p>
             </span> 
             </form>
-        </div>
+        </div>);
     }
     
 }
@@ -62,7 +62,7 @@ class Comment extends React.Component {
     }
 
     render() {
-        return <div>
+        return (<div>
             <div id="commentArea">
                 <div style={{ float: 'left', }}>
                     <p id="text">{this.props.content}</p>
@@ -75,7 +75,7 @@ class Comment extends React.Component {
                 </div>
               </div>
            
-        </div>
+        </div>);
     }
 }
 
@@ -123,8 +123,8 @@ class App extends React.Component {
         var list = comments.map((value) => {
            return (
                     <Comment content={value}/>
-            )})
-        return <div>
+            )});
+        return (<div>
             <div id = 'title'>
                 <h1> Comments: </h1>
             </div>
@@ -135,9 +135,9 @@ class App extends React.Component {
                 <Feedback record={(content)=>this.recordContent(content)} />
                 <p style={{ color: 'red' }}> {warning} </p>
             </div>
-            </div>
+            </div>);
      
-    };
+    }
 }
 
 
