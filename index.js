@@ -1,4 +1,3 @@
-'use strict';
 
 class Feedback extends React.Component {
     constructor(props) {
