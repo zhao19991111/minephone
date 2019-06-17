@@ -477,7 +477,7 @@ class App extends React.Component {
 
     recordContent=(content)=> {
         var num = this.state.numOfComments + 1;
-        var com = this.state.comment
+        var com = this.state.comment;
         if (content != '' && this.state.isFull === false) {
             com.push(content);
             if (this.state.numOfComments < 10) {
