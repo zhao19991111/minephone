@@ -446,7 +446,7 @@ class Comment extends React.Component {
     render() {
         return (<div>
             <div id="commentArea">
-                <div style={{ float: 'left', }}>
+                <div style={{ float: 'left', max-width: '80%' }}>
                     <p id="text">{this.props.content}</p>
                 </div>
                 <div style={{ float: 'right', }}>
@@ -510,10 +510,10 @@ class App extends React.Component {
             <div id = 'title'>
                 <h1> Comments </h1>
             </div>
-            <div id='commentArea'>
+            <div id='commentList'>
                 {list}
             </div>
-            <div id='feedback'>
+            <div id='feedbackArea'>
                 <Feedback record={(content)=>this.recordContent(content)} />
                 <p style={{ color: 'red' }}> {warning} </p>
             </div>
