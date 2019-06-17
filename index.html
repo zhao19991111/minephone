@@ -416,11 +416,10 @@ class Feedback extends React.Component {
                     placeholder="Share your feedback with us!"
                     value={this.state.text}
                     onChange={this.changeText.bind(this)}>
-                    </textarea><br />
-                <span> <button type="button" onClick={()=>this.props.record(text)}> Submit </button>
-                    <button type="button" onClick={()=>this.clear()}> Clear </button>
-                    <p>remaining characters:{remainingChar - text.length}</p>
-            </span> 
+                    </textarea><br/>
+                <button type="button" onClick={()=>this.props.record(text)}> Submit </button>
+                <button type="button" onClick={()=>this.clear()}> Clear </button><br/>
+                <p>remaining characters:{remainingChar - text.length}</p>
             </form>
         </div>);
     }
@@ -445,7 +444,7 @@ class Comment extends React.Component {
     }
 
     render() {
-        return (<div>
+        return (
             <div id="commentArea">
                 <div style={{ float: 'left', maxWidth: '60%' }}>
                     <p id="text">{this.props.content}</p>
@@ -456,9 +455,8 @@ class Comment extends React.Component {
                         like!  {this.state.numberOfLikes}
                 </button>
                 </div>
-              </div>
-           
-        </div>);
+            </div>
+        );
     }
 }
 
