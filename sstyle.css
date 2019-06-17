@@ -5,9 +5,9 @@
     border-color: #0077FF;
     background-color: white;
     text-align: left;
-    float: left;
     width: 80%;
     min-height: 100px;
+    float: left;
 }
 
 #commentArea {
@@ -16,6 +16,7 @@
     border-style: solid solid none solid;
     border-width: 1px 1px 0px 5px;
     border-color: #0077FF;
+    overflow: auto;
 }
 
 #like {
