@@ -417,9 +417,11 @@ class Feedback extends React.Component {
                     value={this.state.text}
                     onChange={this.changeText.bind(this)}>
                     </textarea><br/>
-                <button type="button" onClick={()=>this.props.record(text)}> Submit </button>
-                <button type="button" onClick={()=>this.clear()}> Clear </button><br/>
+                <div>
+                <button id="submitBtn" type="button" onClick={()=>this.props.record(text)}> Submit </button>
+                <button id="clearBtn" type="button" onClick={()=>this.clear()}> Clear </button><br/>
                 <p>remaining characters:{remainingChar - text.length}</p>
+                </div>
             </form>
         </div>);
     }
