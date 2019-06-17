@@ -19,10 +19,6 @@
     border-color: #0077FF;
 }
 
-#commentList{
-    max-height: 500px;
-}
-
 #like {
     background-color: #f1600c;
     color: white;
