@@ -30,7 +30,8 @@
 }
 
 #submitBtn, #clearBtn {
-    width: 10%;
+    width: 20%;
+    height: 50px;
     float: left;
     color: red;
     background-color: black;
