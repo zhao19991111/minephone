@@ -334,7 +334,7 @@ class Slide extends React.Component {
         var myPics = [];
         var m_data = this.props.myData;
         for (let i = 0; i < m_data.name.length; i++) {
-            myPics.push(<img key={i} src={m_data.picture[i]} alt="N/A" style={{ display: i==this.props.myIndex ? 'block' : 'none' }}/>);
+            myPics.push(<img key={i} id = 'photo_{i+3}' src={m_data.picture[i]} alt="N/A" style={{ display: i==this.props.myIndex ? 'block' : 'none' }}/>);
         }
         return (<div>{myPics}</div>);
     }
