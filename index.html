@@ -321,112 +321,12 @@ var id = setInterval(function(){frame("F6");}, 10);
 </div>
 
 <div id="photo" class="hidden">
+          <h1 align = "center" style="background-color:red;"> Gallery </h1>
+         <img id='photo_3' src="./F1 Rendering.png" alt="showcase"/>
+         <img id ='photo_4' src="./Tunnel Rendering.png"/>
+         <img id = 'photo_5' src="./Double screen.png"/>
+         <img id = 'photo_6' src = "./keyboard.png"/>
 </div>
-
-<script type="text/babel">
-
-import picA from "./F1 Rendering.png";
-import picB from "./Tunnel Rendering.png";
-import picC from "./Double screen.png";
-import picD from "./keyboard.png";
-class Slide extends React.Component {
-    render() {
-        var myPics = [];
-        var m_data = this.props.myData;
-        for (let i = 0; i < m_data.name.length; i++) {
-            myPics.push(<img key={i} src={m_data.picture[i]} alt="N/A" style={{ display: i==this.props.myIndex ? 'block' : 'none' }}/>);
-        }
-        return (<div>{myPics}</div>);
-    }
-}
-
-class Buttons extends React.Component {
-    render() {
-        var myButtons = [];
-        var m_data = this.props.myData;
-        for (let i = 0; i < m_data.name.length; i++) {
-            myButtons.push(<input key={i}
-                className={i == this.props.myIndex ? 'active':'nonactive'}
-                type='button'
-                value={''}
-                onMouseOver={this.props.onClick}
-                data-val={i}/>);
-        }
-        return (
-            <div style={{ textAlign: 'center' }}> {myButtons}
-            </div>
-            )
-    }
-
-}
-
-
-class App extends React.Component {
-
-    constructor() {
-        super();
-        this.state = {
-            currentIndex: 0,
-            m_length: 0,
-        };
-    }
-
-    componentWillMount() {
-        this.setState(
-            {
-                m_length: this.props.myData.name.length,
-            });
-    }
-    componentDidMount() {
-        this.AutoPlay();
-    }
-
-    AutoPlay() {
-        this.clear();
-        this.timer = setInterval(() => {
-            let v = this.state.currentIndex;
-            if (v >= this.state.m_length - 1)
-                v = 0;
-            else
-                v++;
-            this.setState(
-                {
-                    currentIndex: v,
-                });
-        }, 3000
-        );
-    }
-
-    change(e) {
-        //console.log(this);
-        var value = e.target.getAttribute('data-val');
-        console.log(value);
-        this.setState(
-            {
-                currentIndex: value,
-            });
-    }
-
-    clear() {
-        clearInterval(this.timer);
-    }
-
-    resume() {
-        this.AutoPlay();
-    }
-
-    render() {
-        return (<div onMouseOver={this.clear.bind(this)} onMouseOut={this.resume.bind(this)}>
-        <h1 align = "center" style="background-color:red;"> Gallery </h1>
-           <Slide myData={this.props.myData} myIndex={this.state.currentIndex}/>
-           <Buttons myData={this.props.myData} onClick={this.change.bind(this)} myIndex={this.state.currentIndex}/>
-        </div>)
-    }
-}
-
-ReactDOM.render(<App myData={{ picture: [picA, picB, picC, picD], name: ['1', '2', '3','4'] }}/> , document.getElementById('photo'));
-
-</script>
 
 <div id="video" class="hidden">
 <h1 align = "center" style="background-color:red;"> Video </h1>
