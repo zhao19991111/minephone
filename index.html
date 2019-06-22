@@ -325,16 +325,16 @@ var id = setInterval(function(){frame("F6");}, 10);
 
 <script type="text/babel">
 
-var picA = "F1 Rendering.png";
-var picB = "Tunnel Rendering.png";
-var picC = "Double screen.png";
-car picD = "keyboard.png";
+import picA from "./F1 Rendering.png";
+import picB from "./Tunnel Rendering.png";
+import picC from "./Double screen.png";
+import picD from "./keyboard.png";
 class Slide extends React.Component {
     render() {
         var myPics = [];
         var m_data = this.props.myData;
         for (let i = 0; i < m_data.name.length; i++) {
-            myPics.push(<img key={i} id = 'photo_{i+3}' src={m_data.picture[i]} alt="N/A" style={{ display: i==this.props.myIndex ? 'block' : 'none' }}/>);
+            myPics.push(<img key={i} src={m_data.picture[i]} alt="N/A" style={{ display: i==this.props.myIndex ? 'block' : 'none' }}/>);
         }
         return (<div>{myPics}</div>);
     }
